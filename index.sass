@@ -1,0 +1,478 @@
+::-webkit-scrollbar 
+  width: 0
+  
+html
+  scroll-behavior: smooth
+
+body
+  margin: 0
+  padding: 0
+
+  font-family: 'Inter', sans-serif
+
+  background-color: #3c3f45
+  background-image: url(../images/bb.png)
+  color: #fff
+
+  display: flex
+  flex-direction: column
+  gap: 6rem
+
+  overflow-x: hidden
+
+#home
+  display: flex
+  justify-content: space-between
+  .hero-blue
+    height: 30rem
+    left: 0
+    width: 22rem
+  .blur
+    background: rgba(253,120,43,.69)
+    border-radius: 50%
+    filter: blur(150px)
+    position: absolute
+    z-index: -9
+  .left
+    display: flex
+    padding: 1.5rem 2rem 2rem
+    flex: 3 1
+    flex-direction: column
+    gap: 2rem
+  .header
+    display: flex
+    justify-content: space-between
+    .logo
+      height: 3rem
+      width: 10rem
+    .menu a
+      color: #fff
+      text-decoration: none
+      font-weight: 400
+    .menu a:hover
+      color: #f48916
+    .menu
+      display: flex
+      gap: 2rem
+
+  .the-best-ad
+    background-color: #393d42
+    align-items: center
+    border-radius: 4rem
+    color: #fff
+    display: flex
+    justify-content: flex-start
+    margin-top: 4rem
+    padding: 20px 13px
+    position: relative
+    width: fit-content
+  .the-best-ad>div
+    background-color: #f48916
+    border-radius: 3rem
+    height: 80%
+    position: absolute
+    width: 5.4rem
+    z-index: 1
+  .the-best-ad>span
+    z-index: 2
+
+  .hero-text
+    color: #fff
+    display: flex
+    flex-direction: column
+    font-size: 4.5rem
+    font-weight: 700
+    gap: 1.7rem
+    text-transform: uppercase
+  .hero-text>div:nth-of-type(3)
+    font-size: 1rem
+    font-weight: 200
+    letter-spacing: 1px
+    text-transform: none
+    width: 80%
+
+  .figures
+    display: flex
+    gap: 2rem
+  .figures>div
+    display: flex
+    flex-direction: column
+  .figures>div>span:first-of-type
+    font-size: 2rem
+  .figures>div>span:nth-of-type(2)
+    text-transform: uppercase
+    color: #9c9c9c
+
+  .hero-button
+    display: flex
+    gap: 1rem
+    font-weight: 400!important
+  .btn
+    border: 4px solid transparent
+    font-weight: 600
+    padding: 0.5rem
+    font-family: 'Inter', sans-serif
+    cursor: pointer
+  .hero-button>:first-child
+    background-color: #f48915
+    color: #fff
+    width: 8rem
+  .hero-button>:nth-child(2)
+    background-color: initial
+    border: 2px solid #f48915
+    color: #fff
+    width: 8rem
+
+  .right
+    background-color: #f48916
+    position: relative
+    flex: 1 1
+
+    .hero-img
+      width: 23rem
+      position: absolute
+      right: 4rem
+      top: 5rem
+    .btn
+      color: #000
+      position: absolute
+      right: 3rem
+      top: 2rem
+
+  .heart
+    align-items: start
+    background-color: #464d53
+    border-radius: 5px
+    display: flex
+    flex-direction: column
+    gap: 1rem
+    padding: 1rem
+    position: absolute
+    top: 7rem
+    width: fit-content
+  .heart>img
+    width: 2rem
+  .heart>:nth-child(2)
+    color: #9c9c9c
+  .heart>:nth-child(3)
+    font-size: 1.5rem
+  .hero-img-back
+    position: absolute
+    top: 2rem
+    width: 15rem
+    z-index: -1
+
+#programs
+  display: flex
+  flex-direction: column
+  gap: 2rem
+  padding: 0 2rem
+
+  .program-header
+    color: #fff
+    display: flex
+    font-size: 3rem
+    font-style: italic
+    font-weight: 700
+    gap: 5rem
+    justify-content: center
+    text-transform: uppercase
+
+  .program-categories, .categorie
+    display: flex
+    gap: 1rem
+
+  .categorie
+    color: #fff
+    flex: 1 1
+    flex-direction: column
+    justify-content: space-between
+    padding: 2rem
+    cursor: pointer
+  .categorie>:first-child
+    fill: #fff
+    height: 2rem
+    width: 2rem
+  .categorie>:nth-child(2)
+    font-size: 1rem
+    font-weight: 700
+  .categorie>:nth-child(3)
+    font-size: .9rem
+    line-height: 25px
+  .join-now
+    align-items: center
+    display: flex
+    gap: 2rem
+  .join-now>img
+    width: 1rem
+
+#reasons
+  display: flex
+  gap: 2rem
+  padding: 0 2rem
+
+  .left
+    grid-gap: 1rem
+    display: grid
+    gap: 1rem
+    grid-auto-rows: 1fr
+  .left>img
+    object-fit: cover
+  .left>:first-child
+    grid-row: 1/3
+    height: 28rem
+    width: 12rem
+  .left>:nth-child(2)
+    grid-column: 2/4
+    height: 16rem
+    width: auto
+  .left>:nth-child(3)
+    grid-column: 2/3
+    grid-row: 2
+    width: 14rem
+  .left>:nth-child(4)
+    grid-column: 3/4
+    grid-row: 2
+    height: 11.2rem
+    width: 10rem
+
+  .right
+    display: flex
+    flex: 1 1
+    flex-direction: column
+    gap: 1rem
+    text-transform: uppercase
+  .right>span
+    color: #f48915
+    font-weight: 700
+  .right>div
+    color: #fff
+    font-size: 3rem
+    font-weight: 700
+  .detailes
+    display: flex
+    flex-direction: column
+    gap: 1rem
+  .detailes>div
+    font-size: .9rem
+    gap: 1rem
+    display: flex
+  .detailes>div>img
+    height: 2rem
+    width: 2rem
+  .parthners
+    display: flex
+    gap: 1rem
+  .parthners>img
+    width: 2.5rem
+
+.blur
+  background: rgba(253,120,43,.69)
+  border-radius: 50%
+  filter: blur(150px)
+  position: absolute
+  z-index: -9
+
+#plans
+  display: flex
+  flex-direction: column
+  gap: 4rem
+  margin-top: -4rem
+  padding: 0 2rem 
+  position: relative
+  .plans-blur-1
+    height: 23rem
+    left: 0
+    top: 6rem
+    width: 32rem
+  .plans-blur-2
+    height: 23rem
+    right: 0
+    top: 10rem
+    width: 32rem
+  .program-header
+    color: #fff
+    display: flex
+    font-size: 3rem
+    font-style: italic
+    font-weight: 700
+    justify-content: center
+    text-transform: uppercase
+
+  .plans-card
+    align-items: center
+    display: flex
+    gap: 3rem
+    justify-content: center
+  .plan
+    background: #656565
+    color: #fff
+    display: flex
+    flex-direction: column
+    gap: 2rem
+    padding: 1.5rem
+    width: 15rem
+  .plan>:nth-child(2)
+    font-size: 1em
+    font-weight: 700
+  .plan>svg
+    fill: #f48915
+    height: 2rem
+    width: 2rem
+  .plan>:nth-child(3)
+    font-size: 3rem
+    font-weight: 700
+  .fuaters, .fuater
+    display: flex
+    gap: 1rem
+  .fuaters
+    flex-direction: column
+  .fuater
+    align-items: center
+  .fuater>img
+    width: 1rem
+  .plan>:nth-child(5)
+    font-size: .8rem
+  .btn
+    background-color: #fff
+    border: 4px solid transparent
+    font-weight: 700
+    padding: 0.5rem
+    font-family: 'Inter', sans-serif
+  .plans-card>:nth-child(2)>svg
+    fill: #fff
+  .plans-card>:nth-child(2)>button
+    color: orange
+  
+  .plan:nth-child(2)
+    background: linear-gradient(210.41deg,#fa5042 1.14%,#ffa739 100.75%)
+    -webkit-transform: scale(1.1)
+
+#testimonials
+  display: flex
+  gap: 1rem
+  padding: 0 2rem
+
+  .left
+    color: #fff
+    display: flex
+    flex: 1.1 1
+    flex-direction: column
+    gap: 2rem
+    text-transform: uppercase
+  .left>:first-child
+    color: #F48920
+    font-weight: 700
+  .left>:nth-child(2), .left>:nth-child(3)
+    font-size: 3rem
+    font-weight: 700
+  .left>:nth-child(4)
+    letter-spacing: 2px 
+    line-height: 40px
+    text-align: justify
+    text-transform: none
+  
+  .right
+    flex: 1 1
+    position: relative
+  .right>:first-child, .right>img
+    height: 20rem
+    position: absolute
+    width: 17rem
+  .right>:first-child
+    background-color: initial
+    border: 2px solid orange
+    right: 9rem
+    top: 0.9rem
+  .right>:nth-child(2)
+    background: linear-gradient(210.41deg,#fa5042 1.14%,#ffa739 100.75%)
+    height: 19rem
+    position: absolute
+    right: 7rem
+    top: 4rem
+    width: 17rem
+  .right>img
+    object-fit: cover
+    right: 8rem
+    top: 2rem
+  .arrows
+    bottom: 1rem
+    display: flex
+    gap: 1rem
+    left: 3rem
+    position: absolute
+  .arrows>img
+    cursor: pointer
+    width: 1.5rem
+
+#join
+  display: flex
+  gap: 10rem
+  padding: 0 2rem
+  .left
+    color: #fff
+    font-size: 3rem
+    font-weight: 700
+    position: relative
+    text-transform: uppercase
+  .left>hr
+    border: 2px solid #F48920
+    border-radius: 20%
+    margin: -10px 0
+    position: absolute
+    width: 10.5rem
+  .left>div
+    display: flex
+    gap: 1rem
+  .right
+    align-items: flex-end
+    display: flex
+    justify-content: center
+  .email-con
+    background-color: gray
+    display: flex
+    padding: 1rem 2rem
+    gap: 3rem
+  .email-con>input
+    background-color: initial
+    border: none
+    outline: none
+    color: #d9d9d9
+  input::placeholder
+    color: #d9d9d9
+  .btn
+    background-color: #fff
+    border: 4px solid transparent
+    font-weight: 700
+    padding: 0.5rem
+    font-family: 'Inter', sans-serif
+  .btn-j
+    background-color: #F48920
+    color: #fff
+
+.Footer-container>hr
+  border: 1px solid #d9d9d9
+.foter
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  height: 10rem
+.logo
+  width: 10rem
+
+@media only screen and (max-width: 1100px)
+  #home .right .hero-img 
+    width: 20rem
+    right: 3rem
+    top: 8rem
+  #home .hero-img-back
+    top: 3rem
+  #programs .program-header
+    font-size: 2.5rem
+  #plans .program-header
+    font-size: 2.5rem
+  #join .left
+    font-size: 2.5rem
+
+
